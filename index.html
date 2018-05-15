@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<title>The Flying Scotsman</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('images/hiddenfalls1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (TWITTER) */
+.bgimg-2 {
+    background-image: url("images/jeepstorm.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/jeepbeach.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#twitter" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-twitter"></i> TWITTER</a>
+    <a href="#youtube" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-youtube"></i> YOUTUBE</a>
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#twitter" class="w3-bar-item w3-button" onclick="toggleFunction()">TWITTER</a>
+    <a href="#youtube" class="w3-bar-item w3-button" onclick="toggleFunction()">YOUTUBE</a>
+  </div>
+</div>
+
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">THE <span class="w3-hide-small">FLYING</span> SCOTSMAN</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><i class="fa fa-2x fa-hand-peace-o" aria-hidden="true"></i><em> Jeep Wave </em><i class="fa fa-2x fa-hand-peace-o" aria-hidden="true"></i></p>
+  <p>Hey there. Glad you made it here. You may have come here because my driver left a decal on your rig. We liked your Jeep, so we decided to send out some love. You can use the decal on your Jeep's window, body, your other ride, or even the back of your cell phone. If you need instructions on how to apply your decal, have no fear: the interwebs is here. First, <a href="https://www.youtube.com/watch?v=0gF3ErylZtg">go get some details about how decals are different than stickers</a>. If you still need some help getting your decal applied, don't worry, <a href="https://www.youtube.com/watch?v=lW08_ckY4io">there are more interwebs out there</a>.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i><a href="https://twitter.com/FlyingScotsJeep">@flyingscotsjeep</a></b></p><br>
+      <img src="images/flyingscotsman.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <p>The Jeep life is all about sending out the love, so feel free to wave at me, my driver will try to wave back. If you're interested in more decals, my driver makes them. Feel free to reach him at <a href="mailto:decals@weenig.com">decals@weenig.com</a> or you can reach out to me on <a href="https://twitter.com/FlyingScotsJeep">Twitter</a>.</p>
+      <p>My favorite modifications:</p>
+      <ul>
+        <li>Hood Vinyl Wrap - <a href="https://goo.gl/maps/AZXpZGN8oVA2">courtesy of Chameleon Wraps</a></li>
+        <li><a href="http://a.co/9zaTTqm">Smittybilt 97412 XRC Winch - 12000 lb.</a></li>
+        <li><a href="https://top-off.biz/">TopOff portable top removal system</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with TWITTER Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">TWITTER</span>
+  </div>
+</div>
+<!-- Container (TWITTER Section) -->
+<div class="w3-content w3-container w3-padding-64" id="twitter">
+<a class="twitter-timeline" data-theme="dark" href="https://twitter.com/FlyingScotsJeep?ref_src=twsrc%5Etfw">Tweets by FlyingScotsJeep</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<!-- Third Parallax Image with YOUTUBE Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">YOUTUBE VIDEOS I LOVE</span>
+  </div>
+</div>
+<!-- Container (youtube Section) -->
+<div class="w3-content w3-container w3-padding-64 w3-center" id="youtube">
+​<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL0qIrrwWPNiLDGnCvy0WVMJJI0u_Hq73r" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+</html>
