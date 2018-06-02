@@ -28,7 +28,7 @@ body, html {
     min-height: 100%;
 }
 
-/* Second image (TWITTER) */
+/* Second image (PORTFOLIO) */
 .bgimg-2 {
     background-image: url("images/jeepstorm.jpg");
     min-height: 400px;
@@ -49,6 +49,12 @@ body, html {
         background-attachment: scroll;
     }
 }
+.mySlides img {
+  max-width:4in;
+  width:100%;
+  padding:32px;
+}
+.mySlides div {position:relative;}
 </style>
 <body>
 <!-- Navbar (sit on top) -->
@@ -59,7 +65,7 @@ body, html {
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#twitter" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-twitter"></i> TWITTER</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-picture-o"></i> DECALS</a>
     <a href="#youtube" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-youtube"></i> YOUTUBE</a>
 
   </div>
@@ -67,7 +73,7 @@ body, html {
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#twitter" class="w3-bar-item w3-button" onclick="toggleFunction()">TWITTER</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">DECALS</a>
     <a href="#youtube" class="w3-bar-item w3-button" onclick="toggleFunction()">YOUTUBE</a>
   </div>
 </div>
@@ -87,7 +93,7 @@ body, html {
   <p>Hey there. Glad you made it here. You may have come here because my driver left a decal on your rig. We liked your Jeep, so we decided to send out some love. You can use the decal on your Jeep's window, body, your other ride, or even the back of your cell phone. If you need instructions on how to apply your decal, have no fear: the interwebs is here. First, <a href="https://www.youtube.com/watch?v=0gF3ErylZtg">go get some details about how decals are different than stickers</a>. If you still need some help getting your decal applied, don't worry, <a href="https://www.youtube.com/watch?v=lW08_ckY4io">there are more interwebs out there</a>.</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i><a href="https://twitter.com/FlyingScotsJeep">@flyingscotsjeep</a></b></p><br>
+      <p><b><a href="https://twitter.com/FlyingScotsJeep"><i class="fa fa-twitter w3-margin-right"></i>@flyingscotsjeep</a></b></p><br>
       <img src="images/flyingscotsman.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
     </div>
     <div class="w3-col m6 w3-padding-large">
@@ -102,16 +108,65 @@ body, html {
   </div>
 </div>
 
-<!-- Second Parallax Image with TWITTER Text -->
+<!-- Second Parallax Image with DECALS Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">TWITTER</span>
+    <span class="w3-xxlarge w3-text-white w3-wide">DECALS</span>
   </div>
 </div>
-<!-- Container (TWITTER Section) -->
-<div class="w3-content w3-container w3-padding-64" id="twitter">
-<a class="twitter-timeline" data-theme="dark" href="https://twitter.com/FlyingScotsJeep?ref_src=twsrc%5Etfw">Tweets by FlyingScotsJeep</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <p class="w3-center"><em>Here are some of the decals my driver has made.</em></p>
+  <div class="w3-content w3-display-container" style="min-height:3in;">
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/dont_follow_me_you_wont_make_it.png">
+      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16">3" - $5 or 6" - $10</div>
+    </div>
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/hurricane_rescue_jeep.png">
+      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16">Hurricane Rescue Jeep: Comes with Harvey badge, more badges will be available for $4 whenever a major storm hits the Gulf Coast<br />$10</div>
+    </div>
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/jeep_front_profile.jpg">
+      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16">3" - $5 or 6" - $10</div>
+    </div>
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/Star_Wars_-_Biker_Scout_1024x1024.jpg">
+      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16">3" - $5 or 6" - $10</div>
+    </div>
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/Star-Wars---Darth-Vader-Variation-2-_Converted_1024x1024.jpg">
+      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16">3" - $5 or 6" - $10</div>
+    </div>
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/Star-Wars---Force-Awakens-Stormtrooper-Helmet-_Converted_1024x1024.jpg">
+      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16">3" - $5 or 6" - $10</div>
+    </div>
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/Stormtrooper-Helmet-Galactic-Empire-Vinyl-Car-Decal-_Converted.jpg">
+      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16">3" - $5 or 6" - $10</div>
+    </div>
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/toxic_avenger.png" style="max-width:7in">
+      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16">3" - $5 or 6" - $10</div>
+    </div>
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/t-rex.jpg">
+      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16">Can be sized to fit on your windshield chasing the OEM jeep.<br />&lt;=3" - $5 or 6" - $10</div>
+    </div>
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/where_were_going_we_dont_need_roads.png">
+      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16">3" - $5 or 6" - $10</div>
+    </div>
+    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+  </div>
 </div>
+
+<!-- Container (TWITTER Section) -->
+<!-- <div class="w3-content w3-container w3-padding-64" id="twitter">
+<a class="twitter-timeline" data-theme="dark" href="https://twitter.com/FlyingScotsJeep?ref_src=twsrc%5Etfw">Tweets by FlyingScotsJeep</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div> -->
 <!-- Third Parallax Image with YOUTUBE Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
@@ -126,7 +181,7 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <a href="https://twitter.com/FlyingScotsJeep"><i class="fa fa-twitter w3-hover-opacity"></i></a>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
@@ -141,6 +196,19 @@ function myFunction() {
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
+}
+
+// Control slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {showDivs(slideIndex += n);}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+  x[slideIndex-1].style.display = "block";
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
